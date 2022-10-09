@@ -1,0 +1,107 @@
+.landing-page-section {
+  height: 60vh;
+  background-image: linear-gradient(
+      rgba($color-black, 0.1),
+      rgba($color-black, 0.1)
+    ),
+    url(../../assets/img/landing-page/landing-page-x1200.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  @media only screen and (min-resolution: 120dpi) and (min-width: 75em),
+    (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min-width: 75em),
+    (min-width: 125em) {
+    background-image: linear-gradient(
+        rgba($color-black, 0.1),
+        rgba($color-black, 0.1)
+      ),
+      url(../../assets/img/landing-page/landing-page-1920x1080.jpg);
+  }
+  @include respond(phone) {
+    height: 50vh;
+  }
+  @include respond(small-phone) {
+    height: 40vh;
+  }
+}
+
+.home-page-section {
+  padding: 6rem 0 6rem 0;
+  color: $color-black-2;
+}
+
+.box-text-home {
+  margin-top: 10rem;
+  padding: 0 4rem;
+
+  @include respond(tab-port) {
+    margin-top: 8rem;
+  }
+  @include respond(phone) {
+    margin-top: 2.5rem;
+    padding: 0 2rem;
+  }
+
+  @include respond(small-phone) {
+    padding: 0 0rem;
+  }
+
+  &__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    object-position: center;
+    @include respond(tab-land) {
+      grid-column: 1 / -1;
+      margin-bottom: 4rem;
+    }
+
+    @include respond(tab-port) {
+      margin: 0 auto;
+      outline-offset: none;
+      margin-bottom: 2rem;
+      outline: none;
+      margin-bottom: 4rem;
+    }
+  }
+  &__droit {
+    font-size: 2.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    li {
+      list-style: inside;
+    }
+    @include respond(tab-land) {
+      grid-column: 1 / -1;
+      order: 2;
+    }
+    @include respond(tab-port) {
+      padding: 0 4rem;
+    }
+    @include respond(small-phone) {
+      padding: 0 1rem;
+    }
+  }
+  &__specialization {
+    font-weight: 600;
+    margin-bottom: 2.4rem;
+    font-size: 2.6rem;
+    list-style: inside;
+  }
+
+  &__competence {
+    margin-top: 4rem;
+    font-style: italic;
+    @include respond(phone) {
+      font-size: 2rem;
+    }
+  }
+
+  &__competence span {
+    display: block;
+  }
+}

@@ -1,0 +1,51 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  width: 100%;
+}
+
+.body {
+  padding-top: 10rem;
+  min-height: 100vh;
+  position: relative;
+}
+
+.body-index {
+  min-height: 100vh;
+  position: relative;
+}
+
+.container {
+  max-width: 160rem;
+  margin: 0 auto;
+  padding: 0 0.8rem;
+}
+
+.main {
+  padding-bottom: 2rem;
+}
+
+.cache-active {
+  position: absolute;
+  background: rgba($color-black, .6);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+}
+
+.main-contact {
+  padding-bottom: 0;
+}

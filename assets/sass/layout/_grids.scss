@@ -1,0 +1,24 @@
+.grid-navigation {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-home-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-2  {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3  {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-12 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}

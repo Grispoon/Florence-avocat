@@ -1,0 +1,41 @@
+.section-presse {
+  &__container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__article-pdf {
+    margin-bottom: 8rem;
+    width: 100%;
+    height: 80rem;
+  }
+}
+
+
+.section-galerie-de-presse {
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        img {
+          object-fit: cover;   
+          height: auto;
+          flex: 0 0 33.33%;
+        }
+    }
+        &__column {
+        padding: 1rem;
+        flex: 0 0 33.33%;
+          @include respond(tab-port) {
+            flex: 0 0 50%;
+          }
+          @include respond(phone) {
+            flex: 0 0 100%;
+          }
+          img {
+              object-fit: cover;   
+              height: auto;
+        }
+    }
+}
+

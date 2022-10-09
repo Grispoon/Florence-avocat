@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;0,700;0,800;1,700&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap");
+
+html {
+  font-size: 62.5%;
+  font-family: "Hind Siliguri", sans-serif;
+  @include respond(tab-port) {
+    font-size: 60%;
+  }
+  @include respond(phone) {
+    font-size: 55%;
+  }
+  @include respond(small-phone) {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-size: $default-font-size;
+  color: $color-black-2;
+}
+
+a {
+  text-decoration: none;
+}
+
+.title-main-page {
+  color: $color-black-2;
+  text-align: center;
+  &__name {
+    font-size: 5.4rem;
+    display: block;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1.4rem;
+    @include respond(tab-port) {
+      font-size: 3.5rem;
+    }
+    @include respond(phone) {
+      font-size: 3rem;
+    }
+    @include respond(small-phone) {
+      font-size: 2.2rem;
+      letter-spacing: 1rem;
+    }
+  }
+  &__profession {
+    display: block;
+    margin: 0.2rem 0 0.2rem 0;
+    font-size: 4rem;
+    font-weight: 500;
+  }
+  &__specialization {
+    font-size: 4rem;
+    font-weight: 300;
+    font-style: italic;
+    @include respond(tab-port) {
+      font-size: 3rem;
+    }
+    @include respond(phone) {
+      font-size: 2.5rem;
+    }
+    @include respond(small-phone) {
+      font-size: 2.2rem;
+    }
+  }
+  &__droit {
+    font-size: 2.4rem;
+  }
+}
+
+.title-section {
+  color: $color-black-2;
+  text-align: center;
+  font-size: 5rem;
+  margin-bottom: 10rem;
+  @include respond(tab-port) {
+    margin-bottom: 5rem;
+  }
+  @include respond(small-phone) {
+    font-size: 3rem;
+  }
+}
+
+.title-article {
+  font-size: 2rem;
+  margin: 5rem 0 5rem 0;
+  color: $color-black-2;
+  &__under-title {
+    font-size: 1.8rem;
+    font-weight: 500;
+    display: block;
+  }
+}
+
+.semi-bold {
+  font-weight: 600;
+}
+
+// FOOTER

@@ -1,0 +1,49 @@
+.transparent {
+  background-color: transparent;
+}
+// position
+.relative {
+  position: relative;
+}
+
+
+
+.absolute {
+  position: absolute;
+}
+
+.background-color-nav {
+  background-color: $color-black-2;
+}
+
+.text-block {
+  display: block;
+}
+
+.margin-top-small {
+  margin-top: 2rem !important;
+}
+
+.margin-top-medium {
+  margin-top: 4rem !important;
+}
+
+.margin-bot-medium {
+  margin-bottom: 4rem !important;
+}
+
+.margin-bottom-medium {
+  margin-bottom: 3.5rem !important;
+}
+
+.margin-bottom-large {
+  margin-bottom: 5rem !important;
+}
+
+.padding-y-medium {
+  padding: 4rem 0 !important;
+}
+
+.padding-y-large {
+  padding: 6rem 0 !important;
+}

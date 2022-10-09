@@ -1,0 +1,66 @@
+.header {
+  position: relative;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 1rem 0;
+  background-color: $color-black-2;
+  @include respond(tab-land) {
+    background-color: $color-black-2;
+  }
+  &-bg {
+    background-color: $color-black-2;
+  }
+
+  &__link-logo {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    grid-template: 1 / 2;
+  }
+  &__logo {
+    width: 4.5rem;
+  }
+  &__navigation-menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $color-white;
+    grid-column: 2 / -1;
+    @include respond(tab-port) {
+      display: none
+    }
+  }
+  &__navigation-menu a {
+    cursor: pointer;
+    color: $color-white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__navigation-menu a:not(:last-child) {
+    margin-right: 2rem;
+  }
+  &__navigation-menu a::after {
+    content: "";
+    width: 0%;
+    height: 0.2rem;
+    background-color: $color-white;
+    transition: width 0.2s ease-in-out;
+    display: block;
+    border-radius: 5px;
+    transform: translateY(100%);
+  }
+  &__navigation-menu a:hover::after {
+    width: 100%;
+  }
+ 
+};
+
+
